@@ -9,10 +9,28 @@ siege -c10 -t60S http://127.0.0.1:8082/mysqltest/GetWithIndexBTREE?datebirth={FO
 ```
 
 siege -c25  
-![C10](screens/c10.jpg)  
-
-siege -c25  
-![C10](screens/c25.jpg)  
+(insert new user and get select)
+![C10](screens/c25_flushLogLevel0.jpg)  
+![C10](screens/c25_flushLogLevel0_BTREE.jpg)  
+![C10](screens/c25_flushLogLevel1.jpg)  
+![C10](screens/c25_flushLogLevel1_BTREE.jpg)  
+![C10](screens/c25_flushLogLevel2.jpg)  
+![C10](screens/c25_flushLogLevel2_BTREE.jpg)  
 
 siege -c50  
-![C10](screens/c50.jpg)  
+(insert new user and get select)
+![C10](screens/c50_flushLogLevel0.jpg)  
+![C10](screens/c50_flushLogLevel0_BTREE.jpg)  
+![C10](screens/c50_flushLogLevel1.jpg)  
+![C10](screens/c50_flushLogLevel1_BTREE.jpg)  
+![C10](screens/c50_flushLogLevel2.jpg)  
+![C10](screens/c50_flushLogLevel2_BTREE.jpg)  
+
+siege -c70  
+(insert new user and get select)
+![C10](screens/c70_flushLogLevel0.jpg)  
+![C10](screens/c70_flushLogLevel0_BTREE.jpg)  
+![C10](screens/c70_flushLogLevel1.jpg)  
+![C10](screens/c70_flushLogLevel1_BTREE.jpg)  
+![C10](screens/c70_flushLogLevel2.jpg)  
+![C10](screens/c70_flushLogLevel2_BTREE.jpg)  
