@@ -1,4 +1,4 @@
-Run  
+# Run #
 ```
 docker-compose -f "docker-compose.yml" up -d --build  
 ```
@@ -8,29 +8,31 @@ siege -c10 -t60S http://127.0.0.1:8082/mysqltest/GetWithoutIndex?datebirth={FORM
 siege -c10 -t60S http://127.0.0.1:8082/mysqltest/GetWithIndexBTREE?datebirth={FORMAT: yyyy-MM-dd}&flushLogLevel={VALUE: innodb_flush_log_at_trx_commit}  
 ```
 
-siege -c25  
+## siege -c25 ##
 (insert new user and get select)  
-![C10](screens/c25_flushLogLevel0.jpg)  
-![C10](screens/c25_flushLogLevel0_BTREE.jpg)  
-![C10](screens/c25_flushLogLevel1.jpg)  
-![C10](screens/c25_flushLogLevel1_BTREE.jpg)  
-![C10](screens/c25_flushLogLevel2.jpg)  
-![C10](screens/c25_flushLogLevel2_BTREE.jpg)  
+![C10](screens/c25_flushLogLevel0.jpg "without index and with innodb_flush_log_at_trx_commit = 0")  
+socket: 537147848 select timed out: Connection timed out  
+![C10](screens/c25_flushLogLevel0_BTREE.jpg "without index BTREE and with innodb_flush_log_at_trx_commit = 0")  
+![C10](screens/c25_flushLogLevel1.jpg "without index and with innodb_flush_log_at_trx_commit = 1")  
+![C10](screens/c25_flushLogLevel1_BTREE.jpg "without index BTREE and with innodb_flush_log_at_trx_commit = 1")  
+![C10](screens/c25_flushLogLevel2.jpg "without index and with innodb_flush_log_at_trx_commit = 2")  
+socket: 537146840 select timed out: Connection timed out
+![C10](screens/c25_flushLogLevel2_BTREE.jpg "without index BTREE and with innodb_flush_log_at_trx_commit = 2")  
 
-siege -c50  
+## siege -c50 ##
 (insert new user and get select)  
-![C10](screens/c50_flushLogLevel0.jpg)  
-![C10](screens/c50_flushLogLevel0_BTREE.jpg)  
-![C10](screens/c50_flushLogLevel1.jpg)  
-![C10](screens/c50_flushLogLevel1_BTREE.jpg)  
-![C10](screens/c50_flushLogLevel2.jpg)  
-![C10](screens/c50_flushLogLevel2_BTREE.jpg)  
+![C10](screens/c50_flushLogLevel0.jpg "without index and with innodb_flush_log_at_trx_commit = 0")  
+![C10](screens/c50_flushLogLevel0_BTREE.jpg "without index BTREE and with innodb_flush_log_at_trx_commit = 0")  
+![C10](screens/c50_flushLogLevel1.jpg "without index and with innodb_flush_log_at_trx_commit = 1")  
+![C10](screens/c50_flushLogLevel1_BTREE.jpg "without index BTREE and with innodb_flush_log_at_trx_commit = 1")  
+![C10](screens/c50_flushLogLevel2.jpg "without index and with innodb_flush_log_at_trx_commit = 2")  
+![C10](screens/c50_flushLogLevel2_BTREE.jpg "without index BTREE and with innodb_flush_log_at_trx_commit = 2")  
 
-siege -c70  
+## siege -c70 ##
 (insert new user and get select)  
-![C10](screens/c70_flushLogLevel0.jpg)  
-![C10](screens/c70_flushLogLevel0_BTREE.jpg)  
-![C10](screens/c70_flushLogLevel1.jpg)  
-![C10](screens/c70_flushLogLevel1_BTREE.jpg)  
-![C10](screens/c70_flushLogLevel2.jpg)  
-![C10](screens/c70_flushLogLevel2_BTREE.jpg)  
+![C10](screens/c70_flushLogLevel0.jpg "without index and with innodb_flush_log_at_trx_commit = 0")  
+![C10](screens/c70_flushLogLevel0_BTREE.jpg "without index BTREE and with innodb_flush_log_at_trx_commit = 0")  
+![C10](screens/c70_flushLogLevel1.jpg "without index and with innodb_flush_log_at_trx_commit = 1")  
+![C10](screens/c70_flushLogLevel1_BTREE.jpg "without index BTREE and with innodb_flush_log_at_trx_commit = 1")  
+![C10](screens/c70_flushLogLevel2.jpg "without index and with innodb_flush_log_at_trx_commit = 2")  
+![C10](screens/c70_flushLogLevel2_BTREE.jpg "without index BTREE and with innodb_flush_log_at_trx_commit = 2")  
