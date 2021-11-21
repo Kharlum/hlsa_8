@@ -16,7 +16,7 @@ socket: 537147848 select timed out: Connection timed out
 ![C10](screens/c25_flushLogLevel1.jpg "without index and with innodb_flush_log_at_trx_commit = 1")  
 ![C10](screens/c25_flushLogLevel1_BTREE.jpg "without index BTREE and with innodb_flush_log_at_trx_commit = 1")  
 ![C10](screens/c25_flushLogLevel2.jpg "without index and with innodb_flush_log_at_trx_commit = 2")  
-socket: 537146840 select timed out: Connection timed out
+socket: 537146840 select timed out: Connection timed out  
 ![C10](screens/c25_flushLogLevel2_BTREE.jpg "without index BTREE and with innodb_flush_log_at_trx_commit = 2")  
 
 ## siege -c50 ##
