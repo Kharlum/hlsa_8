@@ -1,4 +1,5 @@
 # Run #  
+unzip users.zip and run:  
 ```
 docker-compose -f "docker-compose.yml" up -d --build  
 ```
